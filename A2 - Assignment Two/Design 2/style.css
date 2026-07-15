@@ -18,7 +18,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: black;
-    padding: 15px 30px;
+    padding: 0 30px;
 }
 
 header #logo {
@@ -41,8 +41,7 @@ header #logo {
 }
 
 .drinks {
-    /* background-color: blue; */
-    /* height: 45%; */
+    height: 38%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -50,12 +49,12 @@ header #logo {
     margin-top: 20px;
 }
 
-.card-active {
+.card {
     height: 100%;
-    width: 23%;
+    width: 24%;
     border-radius: 20px;
     background-color: #111;
-    padding: 40px 0;
+    /* padding: 40px 0; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -63,14 +62,17 @@ header #logo {
     align-items: center;
 }
 
-.card-active .tag {
+.active {
+    border: 1px solid orange;
+}
+
+.card .tag {
     position: absolute;
     top: 5%;
     left: 5%;
     color: orange;
     height: 30px;
     width: 90px;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,25 +83,26 @@ header #logo {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.card-active .dot {
+.card .dot {
     height: 7px;
     width: 7px;
     border-radius: 50%;
     background-color: orange;
 }
 
-.card-active img {
-    height: 175px;
+.card img {
+    height: 150px;
+    object-fit: cover;
 }
 
-.card-active .title {
+.title {
     font-size: 20px;
     font-weight: 600;
 }
 
-.card-active .subtitle{
-    font-size: 12px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.subtitle{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
     color: gray;
     position: relative;
 }
@@ -115,13 +118,136 @@ header #logo {
     position: absolute;
 }
 
-.card-active .price {
+.price {
     margin-top: 12px;
     font-size: 14px;
     color: orange;
 }
-.card {
+
+.card .tag2 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: orange;
+    height: 30px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid orange;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.special {
+    height: 42%;
+    width: 100%;
+    /* background-color: chartreuse; */
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+}
+
+.left {
     height: 100%;
-    width: 24%;
-    background-color: yellow;
+    width: 23%;
+    /* background-color: red; */
+}
+
+.left img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.right {
+    height: 100%;
+    width: 75%;
+    padding-left: 30px;
+}
+
+.right span {
+    text-transform: uppercase;
+    font-size: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    color: orange;
+}
+
+.right h2 {
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.right p {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: gray;
+    line-height: 1.5;
+}
+
+.right button {
+    margin-top: 15px;
+    font-size: 12px;
+    padding: 8px 18px;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid orange;
+    color: orange;
+}
+
+button i {
+    color: orange;
+}
+
+footer {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > span {
+    font-size: 12px;
+    color: gray;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.links span {
+    font-size: 12px;
+    color: gray;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1px solid orange;
+    border-radius: 50%;
+    color: orange;
 }
