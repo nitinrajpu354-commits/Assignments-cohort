@@ -177,6 +177,7 @@ header .nav-right {
 }
 
 .right-main .location {
+  margin-top: 20px;
   display: flex;
   /* justify-content: space-evenly; */
   align-items: center;
